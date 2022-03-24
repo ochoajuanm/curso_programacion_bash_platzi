@@ -1,6 +1,5 @@
 # Curso de Programación en Bash Shell
 
-
 URL: https://platzi.com/cursos/bash-shell/ 
 
 ## Slides del curso
@@ -54,7 +53,7 @@ Otros operadores [https://www.atareao.es/tutorial/scripts-en-bash/condicionales
 # !/bin/bash
 # Programa para realizar algunas operaciones utilitarios de Postgres
 
-echo "Hola bienvenido al curso de ProgramaciÃ³n bash"
+echo "Hola bienvenido al curso de Programación bash"
 ```
 
 ```bash
@@ -89,13 +88,13 @@ exit 0
 
 ```bash
 # !/bin/bash
-# Programa para revisar la declaraciÃ³n de variables
+# Programa para revisar la declaración de variables
 # Autor: Marco Toscano Freire - @martosfre
 
 opcion=0
 nombre=Marco
 
-echo "OpciÃ³n: $opcion y Nombre: $nombre"
+echo "Opción: $opcion y Nombre: $nombre"
 
 # Exportar la variable nombre para que este disponible a los demÃ¡s procesos
 export nombre
@@ -106,10 +105,10 @@ export nombre
 
 ```bash
 # !/bin/bash
-# Programa para revisar la declaraciÃ³n de variables
+# Programa para revisar la declaración de variables
 # Autor: Marco Toscano Freire - @martosfre
 
-echo "OpciÃ³n nombre pasada del script anterior: $nombre"
+echo "Opción nombre pasada del script anterior: $nombre"
 ```
 
 ## ****Tipos de Operadores****
@@ -122,8 +121,8 @@ echo "OpciÃ³n nombre pasada del script anterior: $nombre"
 numA=10
 numB=4
 
-echo "Operadores AritmÃ©ticos"
-echo "NÃºmeros: A=$numA y B=$numB"
+echo "Operadores Aritméticos"
+echo "Números: A=$numA y B=$numB"
 echo "Sumar A + B =" $((numA + numB))
 echo "Restar A - B =" $((numA - numB))
 echo "Multiplicar A * B =" $((numA * numB))
@@ -131,7 +130,7 @@ echo "Dividir A / B =" $((numA / numB))
 echo "Residuo A % B =" $((numA % numB))
 
 echo -e "\nOperadores Relaciones"
-echo "NÃºmeros: A=$numA y B=$numB"
+echo "Números: A=$numA y B=$numB"
 echo "A > B =" $((numA > numB))
 echo "A < B =" $((numA < numB))
 echo "A >= B =" $((numA >= numB))
@@ -139,11 +138,11 @@ echo "A <= B =" $((numA <= numB))
 echo "A == B =" $((numA == numB))
 echo "A != B =" $((numA != numB))
 
-echo -e "\nOperadores AsignaciÃ³n"
-echo "NÃºmeros: A=$numA y B=$numB"
+echo -e "\nOperadores Asignación"
+echo "Números: A=$numA y B=$numB"
 echo "Sumar A += B" $((numA += numB))
 echo "Restar A -= B" $((numA -= numB))
-echo "MultiplicaciÃ³n A *= B" $((numA *= numB))
+echo "Multiplicación A *= B" $((numA *= numB))
 echo "Dividir A /= B" $((numA /= numB))
 echo "Residuo A %= B" $((numA %= numB))
 ```
@@ -163,7 +162,7 @@ nombreCurso=$1
 horarioCurso=$2
 
 echo "El nombre del curso es: $nombreCurso dictado en el horario de $horarioCurso"
-echo "El nÃºmero de parÃ¡metros enviados es: $#"
+echo "El número de parÃ¡metros enviados es: $#"
 echo "Los parÃ¡metros enviados son: $*"
 ```
 
@@ -178,14 +177,14 @@ Las dos maneras de hacerlo:
 
 ```bash
 # ! /bin/bash
-# Programa para revisar como ejecutar comados dentro de un programa y almacenar en una variable para su posterior utilizaciÃ³n
+# Programa para revisar como ejecutar comados dentro de un programa y almacenar en una variable para su posterior utilización
 # Autor: Marco Toscano Freire - @martosfre
 
 ubicacionActual=`pwd`
 infoKernel=$(uname -a)
 
-echo "La ubicaciÃ³n actual es la siguiente: $ubicacionActual"
-echo "InformaciÃ³n del Kernel: $infoKernel"
+echo "La ubicación actual es la siguiente: $ubicacionActual"
+echo "Información del Kernel: $infoKernel"
 ```
 
 ## ****Debug en Script****
@@ -216,34 +215,34 @@ Para poder capturar información tenemos dos formas dentro de un programa Bash.
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar como capturar la informaciÃ³n del usuario utilizando el comando echo, read y $REPLY
+# Programa para ejemplificar como capturar la información del usuario utilizando el comando echo, read y $REPLY
 # Autor: Marco Toscano Freire - @martosfre
 
 option=0
 backupName=""
 
 echo "Programa Utilidades Postgres"
-echo -n "Ingresar una opciÃ³n:"
+echo -n "Ingresar una opción:"
 read
 option=$REPLY
 echo -n "Ingresar el nombre del archivo del backup:"
 read
 backupName=$REPLY
-echo "OpciÃ³n:$option , backupName:$backupName"
+echo "Opción:$option , backupName:$backupName"
 ```
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar como capturar la informaciÃ³n del usuario utilizando el comando read
+# Programa para ejemplificar como capturar la información del usuario utilizando el comando read
 # Autor: Marco Toscano Freire - @martosfre
 
 option=0
 backupName=""
 
 echo "Programa Utilidades Postgres"
-read -p "Ingresar una opciÃ³n:" option
+read -p "Ingresar una opción:" option
 read -p "Ingresar el nombre del archivo del backup:" backupName
-echo "OpciÃ³n:$option , backupName:$backupName"
+echo "Opción:$option , backupName:$backupName"
 ```
 
 ## ****Expresiones Regulares****
@@ -279,7 +278,7 @@ Finalmente el código fuente lo pueden encontrar en el repositorio de GitHub en 
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar como capturar la informaciÃ³n del usuario y validarla utilizando expresiones regulares
+# Programa para ejemplificar como capturar la información del usuario y validarla utilizando expresiones regulares
 # Autor: Marco Toscano Freire - @martosfre
 
 identificacionRegex='^[0-9]{10}$'
@@ -291,21 +290,21 @@ read -p "Ingresar una identificacion:" identificacion
 read -p "Ingresar las iniciales de un paÃ­s [EC, COL, US]:" pais
 read -p "Ingresar la fecha de nacimiento [yyyyMMdd]:" fechaNacimiento 
 
-#ValidaciÃ³n IdentificaciÃ³n
+#Validación Identificación
 if [[ $identificacion =~ $identificacionRegex ]]; then
-    echo "IdentificaciÃ³n $identificacion vÃ¡lida"
+    echo "Identificación $identificacion vÃ¡lida"
 else
-    echo "IdentificaciÃ³n $identificacion invÃ¡lida"
+    echo "Identificación $identificacion invÃ¡lida"
 fi
 
-#ValidaciÃ³n PaÃ­s
+#Validación PaÃ­s
 if [[ $pais =~ $paisRegex ]]; then
     echo "PaÃ­s $pais vÃ¡lido"
 else
     echo "PaÃ­s $pais invÃ¡lido"
 fi
 
-#ValidaciÃ³n Fecha Nacimiento
+#Validación Fecha Nacimiento
 if [[ $fechaNacimiento =~ $fechaNacimientoRegex ]]; then
     echo "Fecha Nacimiento $fechaNacimiento vÃ¡lida"
 else
@@ -322,7 +321,7 @@ Para el proceso de validación de información tenemos dos maneras de hacerlo:
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar como capturar la informaciÃ³n del usuario y validarla
+# Programa para ejemplificar como capturar la información del usuario y validarla
 # Autor: Marco Toscano Freire - @martosfre
 
 option=0
@@ -330,12 +329,12 @@ backupName=""
 clave=""
 
 echo "Programa Utilidades Postgres"
-# Acepta el ingreso de informaciÃ³n de solo un caracter
-read -n1 -p "Ingresar una opciÃ³n:" option
+# Acepta el ingreso de información de solo un caracter
+read -n1 -p "Ingresar una opción:" option
 echo -e "\n"
 read -n10 -p "Ingresar el nombre del archivo del backup:" backupName
 echo -e "\n"
-echo "OpciÃ³n:$option , backupName:$backupName"
+echo "Opción:$option , backupName:$backupName"
 read -s -p "Clave:" clave
 echo "Clave: $clave"
 ```
@@ -348,9 +347,9 @@ echo "Clave: $clave"
 # Autor: Marco Toscano - @martosfre
 
 echo "Programa Opciones"
-echo "OpciÃ³n 1 enviada: $1"
-echo "OpciÃ³n 2 enviada: $2"
-echo "OpciÃ³n enviadas: $*"
+echo "Opción 1 enviada: $1"
+echo "Opción 2 enviada: $2"
+echo "Opción enviadas: $*"
 echo -e "\n"
 echo "Recuperar valores"
 while [ -n "$1" ]
@@ -359,7 +358,7 @@ case "$1" in
 -a) echo "-a option utilizada";;
 -b) echo "-b option utilizada";;
 -c) echo "-c option utlizada";;
-*) echo "$! no es una opciÃ³n";;
+*) echo "$! no es una opción";;
 esac
 shift
 done
@@ -369,10 +368,10 @@ done
 
 ```bash
 # !/bin/bash
-# Programa para ejemplificar el uso de la descarga de informaciÃ³n desde internet utilizando el comando wget
+# Programa para ejemplificar el uso de la descarga de información desde internet utilizando el comando wget
 # Autor: Marco Toscano Freire - @martosfre
 
-echo "Descargar informaciÃ³n de internet"
+echo "Descargar información de internet"
 wget https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.zip
 ```
 
@@ -435,13 +434,13 @@ echo $telefono
 
 ```bash
 # !/bin/bash
-# Programa para ejemplificar el uso de la sentencia de decisiÃ³n if, else if, else
+# Programa para ejemplificar el uso de la sentencia de decisión if, else if, else
 # Autor: Marco Toscano Freire - @martosfre
 
 edad=0
 
 echo "Ejemplo Sentencia If -else"
-read -p "Indique cÃºal es su edad:" edad
+read -p "Indique cúal es su edad:" edad
 if [ $edad -le 18 ]; then
     echo "La persona es adolescente"
 elif [ $edad -ge 19 ] && [ $edad -le 64 ]; then
@@ -526,7 +525,7 @@ notaClase=0
 continua=""
 
 echo "Ejemplo Sentencia If -else"
-read -n1 -p "Indique cÃºal es su nota (1-9):" notaClase
+read -n1 -p "Indique cúal es su nota (1-9):" notaClase
 echo -e "\n"
 if [ $notaClase -ge 7 ]; then
     echo "El alumno aprueba la materia"
@@ -563,9 +562,9 @@ read -p "Ingrese su edad:" edad
 read -p "Ingrese su paÃ­s:" pais
 read -p "Ingrese el path de su archivo:" pathArchivo
 
-echo -e "\nExpresiones Condicionales con nÃºmeros"
+echo -e "\nExpresiones Condicionales con números"
 if [ $edad -lt 10 ]; then
-    echo "La persona es un niÃ±o o niÃ±a"
+    echo "La persona es un niño o niña"
 elif [ $edad -ge 10 ] && [ $edad -le 17 ]; then
     echo "La persona se trata de un adolescente"
 else
@@ -576,7 +575,7 @@ echo -e "\nExpresiones Condicionales con cadenas"
 if [ $pais = "EEUU" ]; then
     echo "La persona es Americana"
 elif [ $pais = "Ecuador" ] || [ $pais = "Colombia" ]; then
-    echo "La persona es del Sur de AmÃ©rica"
+    echo "La persona es del Sur de América"
 else
     echo "Se desconoce la nacionalidad"
 fi
@@ -601,14 +600,14 @@ En la sentencia Case el objetivo principal es validar una expresión simple, pue
 opcion=""
 
 echo "Ejemplo Sentencia Case"
-read -p "Ingrese una opciÃ³n de la A - Z:" opcion
+read -p "Ingrese una opción de la A - Z:" opcion
 echo -e "\n"
 
 case $opcion in
-    "A") echo -e "\nOperaciÃ³n Guardar Arhivo";;
-    "B") echo "OperaciÃ³n Eliminar Archivo";;
-    [C-E]) echo "No esta implementada la operaciÃ³n";;
-    "*") "OpciÃ³n Incorrecta"
+    "A") echo -e "\nOperación Guardar Arhivo";;
+    "B") echo "Operación Eliminar Archivo";;
+    [C-E]) echo "No esta implementada la operación";;
+    "*") "Opción Incorrecta"
 esac
 
 ```
@@ -627,25 +626,25 @@ arregloCadenas=(Marco, Antonio, Pedro, Susana)
 arregloRangos=({A..Z} {10..20})
 
 #Imprimir todos los valores
-echo "Arreglo de NÃºmeros:${arregloNumeros[*]}"
+echo "Arreglo de Números:${arregloNumeros[*]}"
 echo "Arreglo de Cadenas:${arregloCadenas[*]}"
-echo "Arreglo de NÃºmeros:${arregloRangos[*]}"
+echo "Arreglo de Números:${arregloRangos[*]}"
 
-#Imprimir los tamaÃ±os de los arreglos
-echo "TamaÃ±o Arreglo de NÃºmeros:${#arregloNumeros[*]}"
-echo "TamaÃ±o Arreglo de Cadenas:${#arregloCadenas[*]}"
-echo "TamaÃ±o Arreglo de NÃºmeros:${#arregloRangos[*]}"
+#Imprimir los tamaños de los arreglos
+echo "Tamaño Arreglo de Números:${#arregloNumeros[*]}"
+echo "Tamaño Arreglo de Cadenas:${#arregloCadenas[*]}"
+echo "Tamaño Arreglo de Números:${#arregloRangos[*]}"
 
-#Imprimir la posiciÃ³n 3 del arreglo de nÃºmeros, cadenas de rango
-echo "PosiciÃ³n 3 Arreglo de NÃºmeros:${arregloNumeros[3]}"
-echo "PosiciÃ³n 3 Arreglo de Cadenas:${arregloCadenas[3]}"
-echo "PosiciÃ³n 3 Arreglo de Rangos:${arregloRangos[3]}"
+#Imprimir la posición 3 del arreglo de números, cadenas de rango
+echo "Posición 3 Arreglo de Números:${arregloNumeros[3]}"
+echo "Posición 3 Arreglo de Cadenas:${arregloCadenas[3]}"
+echo "Posición 3 Arreglo de Rangos:${arregloRangos[3]}"
 
-#AÃ±adir y eliminar valores en un arreglo
+#Añadir y eliminar valores en un arreglo
 arregloNumeros[7]=20
 unset arregloNumeros[0]
-echo "Arreglo de NÃºmeros:${arregloNumeros[*]}"
-echo "TamaÃ±o arreglo de NÃºmeros:${#arregloNumeros[*]}"
+echo "Arreglo de Números:${arregloNumeros[*]}"
+echo "Tamaño arreglo de Números:${#arregloNumeros[*]}"
 ```
 
 ## ****Sentencia for loop****
@@ -654,15 +653,15 @@ La sentencia For es esa que se suele utilizar mucho cuando se quiere recorrer o 
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar el uso de la sentencia de iteraciÃ³n for
+# Programa para ejemplificar el uso de la sentencia de iteración for
 # Autor: Marco Toscano Freire - @martosfre
 
 arregloNumeros=(1 2 3 4 5 6)
 
-echo "Iterar en la Lista de NÃºmeros"
+echo "Iterar en la Lista de Números"
 for num in ${arregloNumeros[*]}
 do
-    echo "NÃºmero:$num"
+    echo "Número:$num"
 done
 
 echo "Iterar en la lista de Cadenas"
@@ -686,7 +685,7 @@ done
 echo "Iterar utilizando el formato tradcional"
 for ((i=1; i<10; i++))
 do
-    echo "NÃºmero;$i"
+    echo "Número;$i"
 done
 ```
 
@@ -696,7 +695,7 @@ El While itera una lista de valores basada en una condición lógica mientras es
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar el uso de la sentencia de iteraciÃ³n while
+# Programa para ejemplificar el uso de la sentencia de iteración while
 # Autor: Marco Toscano Freire - @martosfre
 
 numero=1
@@ -764,11 +763,11 @@ while :
 do
     #Limpiar la pantalla
     clear
-    #Desplegar el menÃº de opciones
+    #Desplegar el menú de opciones
     echo "_________________________________________"
     echo "PGUTIL - Programa de Utilidad de Postgres"
     echo "_________________________________________"
-    echo "                MENÃš PRINCIPAL           "
+    echo "                MENÚ PRINCIPAL           "
     echo "_________________________________________"
     echo "1. Instalar Postgres"
     echo "2. Desinstalar Postgres"
@@ -777,7 +776,7 @@ do
     echo "5. Salir"
 
     #Leer los datos del usuario - capturar información
-    read -n1 -p "Ingrese una opciÃ³n [1-5]:" opcion
+    read -n1 -p "Ingrese una opción [1-5]:" opcion
 
     #Validar la opción ingresada
     case $opcion in
@@ -897,7 +896,7 @@ echo -e "\nCopiar los scripts del directorio actual al nuevo directorio backupSc
 cp *.* backupScripts/
 ls -la backupScripts/
 
-echo -e "\nMover el directorio backupScripts a otra ubicaciÃ³n: $HOME"
+echo -e "\nMover el directorio backupScripts a otra ubicación: $HOME"
 mv backupScripts $HOME
 
 echo -e "\nEliminar los archivos .txt"
@@ -1011,7 +1010,7 @@ usuario=""
 
 read -p "Ingresar el host:" host
 read -p "Ingresar el usuario:" usuario
-echo -e "\nEn este momento se procederÃ¡ a empaquetar la carpeta y transferirla segÃºn los datos ingresados"
+echo -e "\nEn este momento se procederÃ¡ a empaquetar la carpeta y transferirla según los datos ingresados"
 rsync -avz $(pwd) $usuario@$host:/Users/martosfre/Downloads/platzi
 ```
 
@@ -1145,23 +1144,23 @@ done
 
 opcion=0
 
-# FunciÃ³n para instalar postgres
+# Función para instalar postgres
 instalar_postgres () {
     echo "Instalar postgres..."
 }
 
-# FunciÃ³n para desinstalar postgres
+# Función para desinstalar postgres
 desinstalar_postgres () {
     echo "Desinstalar postres..."
 }
 
-# FunciÃ³n para sacar un respaldo
+# Función para sacar un respaldo
 sacar_respaldo () {
     echo "Sacar respaldo..."
     echo "Directorio backup: $1"
 }
 
-# FunciÃ³n para restaurar un respaldo
+# Función para restaurar un respaldo
 restaurar_respaldo () {
     echo "Restaurar respaldo..."
     echo "Directorio respaldo: $1"
@@ -1171,11 +1170,11 @@ while :
 do
     #Limpiar la pantalla
     clear
-    #Desplegar el menÃº de opciones
+    #Desplegar el menú de opciones
     echo "_________________________________________"
     echo "PGUTIL - Programa de Utilidad de Postgres"
     echo "_________________________________________"
-    echo "                MENÃš PRINCIPAL           "
+    echo "                MENÚ PRINCIPAL           "
     echo "_________________________________________"
     echo "1. Instalar Postgres"
     echo "2. Desinstalar Postgres"
@@ -1183,10 +1182,10 @@ do
     echo "4. Restar respaldo"
     echo "5. Salir"
 
-    #Leer los datos del usuario - capturar informaciÃ³n
-    read -n1 -p "Ingrese una opciÃ³n [1-5]:" opcion
+    #Leer los datos del usuario - capturar información
+    read -n1 -p "Ingrese una opción [1-5]:" opcion
 
-    #Validar la opciÃ³n ingresada
+    #Validar la opción ingresada
     case $opcion in
         1)
             instalar_postgres
@@ -1223,15 +1222,15 @@ done
 
 opcion=0
 
-# FunciÃ³n para instalar postgres
+# Función para instalar postgres
 instalar_postgres () {
-    echo -e "\n Verificar instalaciÃ³n postgres ...."
+    echo -e "\n Verificar instalación postgres ...."
     verifyInstall=$(which psql)
     if [ $? -eq 0 ]; then
         echo -e "\n Postgres ya se encuentra instalado en el equipo"
     else
-        read -s -p "Ingresar contraseÃ±a de sudo:" password
-        read -s -p "Ingresar contraseÃ±a a utilizar en postgres:" passwordPostgres
+        read -s -p "Ingresar contraseña de sudo:" password
+        read -s -p "Ingresar contraseña a utilizar en postgres:" passwordPostgres
         echo "$password" | sudo -S apt update
         echo "$password" | sudo -S apt-get -y install postgresql postgresql-contrib
         sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '{$PASSWORDpOSTGRES}';"
@@ -1241,9 +1240,9 @@ instalar_postgres () {
     read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
 }
 
-# FunciÃ³n para desinstalar postgres
+# Función para desinstalar postgres
 desinstalar_postgres () {
-    read -s -p "Ingresar contraseÃ±a de sudo:" password
+    read -s -p "Ingresar contraseña de sudo:" password
     echo -e "\n"
     echo "$password" | sudo -S systemctl stop postgresql.service
     echo "$password" | sudo -S apt-get -y --purge remove postgresql\*
@@ -1255,13 +1254,13 @@ desinstalar_postgres () {
     read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
 }
 
-# FunciÃ³n para sacar un respaldo
+# Función para sacar un respaldo
 sacar_respaldo () {
     echo "Sacar respaldo..."i
     echo "Directorio backup: $1"
 }
 
-# FunciÃ³n para restaurar un respaldo
+# Función para restaurar un respaldo
 restaurar_respaldo () {
     echo "Restaurar respaldo..."
     echo "Directorio respaldo: $1"
@@ -1271,11 +1270,11 @@ while :
 do
     #Limpiar la pantalla
     clear
-    #Desplegar el menÃº de opciones
+    #Desplegar el menú de opciones
     echo "_________________________________________"
     echo "PGUTIL - Programa de Utilidad de Postgres"
     echo "_________________________________________"
-    echo "                MENÃš PRINCIPAL           "
+    echo "                MENÚ PRINCIPAL           "
     echo "_________________________________________"
     echo "1. Instalar Postgres"
     echo "2. Desinstalar Postgres"
@@ -1283,10 +1282,10 @@ do
     echo "4. Restar respaldo"
     echo "5. Salir"
 
-    #Leer los datos del usuario - capturar informaciÃ³n
-    read -n1 -p "Ingrese una opciÃ³n [1-5]:" opcion
+    #Leer los datos del usuario - capturar información
+    read -n1 -p "Ingrese una opción [1-5]:" opcion
 
-    #Validar la opciÃ³n ingresada
+    #Validar la opción ingresada
     case $opcion in
         1)
             instalar_postgres
@@ -1324,16 +1323,16 @@ done
 opcion=0
 fechaActual=`date +%Y%m%d`
 
-# FunciÃ³n para instalar postgres
+# Función para instalar postgres
 instalar_postgres () {
-    echo -e "\n Verificar instalaciÃ³n postgres ...."
+    echo -e "\n Verificar instalación postgres ...."
     verifyInstall=$(which psql)
     if [ $? -eq 0 ]; then
         echo -e "\n Postgres ya se encuentra instalado en el equipo"
     else
         echo -e "\n"
-        read -s -p "Ingresar contraseÃ±a de sudo:" password
-        read -s -p "Ingresar contraseÃ±a a utilizar en postgres:" passwordPostgres
+        read -s -p "Ingresar contraseña de sudo:" password
+        read -s -p "Ingresar contraseña a utilizar en postgres:" passwordPostgres
         echo "$password" | sudo -S apt update
         echo "$password" | sudo -S apt-get -y install postgresql postgresql-contrib
         sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '{$PASSWORDpOSTGRES}';"
@@ -1343,10 +1342,10 @@ instalar_postgres () {
     read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
 }
 
-# FunciÃ³n para desinstalar postgres
+# Función para desinstalar postgres
 desinstalar_postgres () {
     echo -e "\n"
-    read -s -p "Ingresar contraseÃ±a de sudo:" password
+    read -s -p "Ingresar contraseña de sudo:" password
     echo -e "\n"
     echo "$password" | sudo -S systemctl stop postgresql.service
     echo "$password" | sudo -S apt-get -y --purge remove postgresql\*
@@ -1358,7 +1357,7 @@ desinstalar_postgres () {
     read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
 }
 
-# FunciÃ³n para sacar un respaldo
+# Función para sacar un respaldo
 sacar_respaldo () {
     echo "Listar las bases de datos"
     sudo -u postgres psql -c "\l"
@@ -1369,14 +1368,14 @@ sacar_respaldo () {
         echo "$password" | sudo -S chmod 755 $1
         echo "Realizando respaldo..."
         sudo -u postgres pg_dump -Fc $bddRespaldo > "$1/bddRespaldo$fechaActual.bak"
-        echo "Respaldo realizado correctamente en la ubicaciÃ³n:$1/bddRespaldo$fechaActual.bak"
+        echo "Respaldo realizado correctamente en la ubicación:$1/bddRespaldo$fechaActual.bak"
     else
         echo "El directorio $1 no existe"
     fi
     read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
 }
 
-# FunciÃ³n para restaurar un respaldo
+# Función para restaurar un respaldo
 restaurar_respaldo () {
     echo "Listar respaldos"
     ls -1 $1/*.bak
@@ -1406,11 +1405,11 @@ while :
 do
     #Limpiar la pantalla
     clear
-    #Desplegar el menÃº de opciones
+    #Desplegar el menú de opciones
     echo "_________________________________________"
     echo "PGUTIL - Programa de Utilidad de Postgres"
     echo "_________________________________________"
-    echo "                MENÃš PRINCIPAL           "
+    echo "                MENÚ PRINCIPAL           "
     echo "_________________________________________"
     echo "1. Instalar Postgres"
     echo "2. Desinstalar Postgres"
@@ -1418,10 +1417,10 @@ do
     echo "4. Restar respaldo"
     echo "5. Salir"
 
-    #Leer los datos del usuario - capturar informaciÃ³n
-    read -n1 -p "Ingrese una opciÃ³n [1-5]:" opcion
+    #Leer los datos del usuario - capturar información
+    read -n1 -p "Ingrese una opción [1-5]:" opcion
 
-    #Validar la opciÃ³n ingresada
+    #Validar la opción ingresada
     case $opcion in
         1)
             instalar_postgres
@@ -1671,5 +1670,3 @@ case $opcion in
 ## Cheatsheet
 
 [https://devhints.io/bash](https://devhints.io/bash)
-
-Examen [https://platzi.com/clases/examen/resultados/1468/](https://platzi.com/clases/examen/resultados/1468/)
