@@ -1,15 +1,11 @@
 # Curso de Programación en Bash Shell
 
-Creado el: March 12, 2022 12:23 PM
-Estado: En Proceso
-Fecha iniciado: March 1, 2022
-Plataforma: https://www.notion.so/Platzi-8d914e100a8d4977b513036980660fcc
-Profesor/a: https://www.notion.so/Marco-Antonio-Toscano-Freire-d4b926b7458b4c84b0c36f1ba84725a2
-URL: https://platzi.com/cursos/bash-shell/
+
+URL: https://platzi.com/cursos/bash-shell/ 
 
 ## Slides del curso
 
-[shell_e14d8e06-be5c-46c6-9691-15a625ac9af4.pdf](Curso%20de%20P%20eaf6a/shell_e14d8e06-be5c-46c6-9691-15a625ac9af4.pdf)
+[Slides Bash shell](src/shell.pdf)
 
 ## ****Componentes de Linux, Tipos de Shell y Comandos de información****
 
