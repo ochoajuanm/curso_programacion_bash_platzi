@@ -70,7 +70,8 @@ exit 0
 
 ## ****Declaración de Variables y Alcance en Bash Shell****
 
-**1 Variables de entorno**Ayudan a obtener infromacion del sistema, almacenar informacion temporal y modificar su informacion. Existen 2 tipos:
+**1 Variables de entorno**
+Ayudan a obtener infromacion del sistema, almacenar informacion temporal y modificar su informacion. Existen 2 tipos:
 
 *Variables Globales:* Son visibles desde el shell que lo creo o desde cuaquier hijo de esa shell.
 
@@ -80,7 +81,8 @@ exit 0
 
 *Por eso no funciona llamar la variable declarada en /etc/profile desde un shell*
 
-**2 Variables de usuario**Son las variables que se corren dentro de un script como en cualquier programa de computadora C, C++ o Java
+**2 Variables de usuario**
+Son las variables que se corren dentro de un script como en cualquier programa de computadora C, C++ o Java
 
 *Variable global:* Se puede usar desde otro script siempre y cuando sea llamado desde el script que contiene la variable.
 
@@ -96,7 +98,7 @@ nombre=Marco
 
 echo "Opción: $opcion y Nombre: $nombre"
 
-# Exportar la variable nombre para que este disponible a los demÃ¡s procesos
+# Exportar la variable nombre para que este disponible a los demás procesos
 export nombre
 
 # Llamar al siguiente script para recuperar la variable
@@ -162,8 +164,8 @@ nombreCurso=$1
 horarioCurso=$2
 
 echo "El nombre del curso es: $nombreCurso dictado en el horario de $horarioCurso"
-echo "El número de parÃ¡metros enviados es: $#"
-echo "Los parÃ¡metros enviados son: $*"
+echo "El número de parámetros enviados es: $#"
+echo "Los parámetros enviados son: $*"
 ```
 
 ## ****Sustitución de Comandos en variables****
@@ -292,23 +294,23 @@ read -p "Ingresar la fecha de nacimiento [yyyyMMdd]:" fechaNacimiento
 
 #Validación Identificación
 if [[ $identificacion =~ $identificacionRegex ]]; then
-    echo "Identificación $identificacion vÃ¡lida"
+    echo "Identificación $identificacion válida"
 else
-    echo "Identificación $identificacion invÃ¡lida"
+    echo "Identificación $identificacion inválida"
 fi
 
 #Validación PaÃ­s
 if [[ $pais =~ $paisRegex ]]; then
-    echo "PaÃ­s $pais vÃ¡lido"
+    echo "PaÃ­s $pais válido"
 else
-    echo "PaÃ­s $pais invÃ¡lido"
+    echo "PaÃ­s $pais inválido"
 fi
 
 #Validación Fecha Nacimiento
 if [[ $fechaNacimiento =~ $fechaNacimientoRegex ]]; then
-    echo "Fecha Nacimiento $fechaNacimiento vÃ¡lida"
+    echo "Fecha Nacimiento $fechaNacimiento válida"
 else
-    echo "Fecha Nacimiento $fechaNacimiento invÃ¡lida"
+    echo "Fecha Nacimiento $fechaNacimiento inválida"
 fi
 ```
 
@@ -343,7 +345,7 @@ echo "Clave: $clave"
 
 ```bash
 # ! /bin/bash
-# Programa para ejemplificar como se realiza el paso de opciones con sin parÃ¡metros
+# Programa para ejemplificar como se realiza el paso de opciones con sin parámetros
 # Autor: Marco Toscano - @martosfre
 
 echo "Programa Opciones"
@@ -1010,7 +1012,7 @@ usuario=""
 
 read -p "Ingresar el host:" host
 read -p "Ingresar el usuario:" usuario
-echo -e "\nEn este momento se procederÃ¡ a empaquetar la carpeta y transferirla según los datos ingresados"
+echo -e "\nEn este momento se procederá a empaquetar la carpeta y transferirla según los datos ingresados"
 rsync -avz $(pwd) $usuario@$host:/Users/martosfre/Downloads/platzi
 ```
 
