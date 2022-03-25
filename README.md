@@ -50,7 +50,7 @@ Otros operadores [https://www.atareao.es/tutorial/scripts-en-bash/condicionales
 ## ****Crear nuestro primer Script****
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para realizar algunas operaciones utilitarios de Postgres
 
 echo "Hola bienvenido al curso de Programación bash"
@@ -89,7 +89,7 @@ Son las variables que se corren dentro de un script como en cualquier programa d
 - Variable local:_ Solo tiene alcance en el script que la creo.
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para revisar la declaración de variables
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -106,7 +106,7 @@ export nombre
 ```
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para revisar la declaración de variables
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -369,7 +369,7 @@ done
 ## ****Descargar información de Internet****
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para ejemplificar el uso de la descarga de información desde internet utilizando el comando wget
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -435,7 +435,7 @@ echo $telefono
 ## ****Sentencias If/Else****
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para ejemplificar el uso de la sentencia de decisión if, else if, else
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -519,7 +519,7 @@ if [ $respart = "1452" ]; then
 ## ****If Anidados****
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para ejemplificar el uso de los ifs anidados
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -552,7 +552,7 @@ Las expresiones condicionales ya las hemos visto en clases anteriores, pero en q
 - Utiliza los operadores relacionales y condicionales
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para ejemplificar el uso de expresiones condicionales
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -595,7 +595,7 @@ fi
 En la sentencia Case el objetivo principal es validar una expresión simple, puede ser un número, una cadena o un rango de valores
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa para ejemplificar el uso de la sentencia case
 # Autor: Marco Toscano Freire - @martosfre
 
@@ -908,7 +908,7 @@ rm *.txt
 ## Reto 5
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Reto 5. Generar un archivo log, escribir dentro de este archivo el usuario, y la fecha de log en formato yyyy_MM_DD_HH_mm_ss
 # Autor: Luis Xavier
 
@@ -1019,7 +1019,7 @@ rsync -avz $(pwd) $usuario@$host:/Users/martosfre/Downloads/platzi
 ## Reto 6
 
 ```bash
-# !/bin/bash
+#!/bin/bash
 # Programa que muestra algunas funcionalidades basicas del sistema
 
 option=0
